@@ -9,10 +9,8 @@ export const signup = async (req, res, next) => {
 
   if (
     !username ||
-
     !password ||
     username === '' ||
-  
     password === ''
   ) {
     next(errorHandler(400, 'All fields are required'));
